@@ -1,0 +1,122 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to top, #0077b6, #0096c7, #00b4d8, #48cae4, #90e0ef);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.calculator-container {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    padding: 20px;
+}
+
+.calculator-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.display-container {
+    margin-bottom: 20px;
+}
+
+#calculator-display {
+    width: 100%;
+    height: 60px;
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    background: #f9f9f9;
+    color: #333;
+}
+
+.buttons-container {
+    display: grid;
+    gap: 10px;
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.button {
+    flex: 1;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    color: #333;
+    transition: all 0.3s ease;
+    margin: 0;
+}
+
+.button.operator {
+    background-color: #7ac77c;
+    color: #fff;
+}
+
+.button.clear {
+    background-color: #df6f67;
+    color: #fff;
+}
+
+.button.equals {
+    background-color: #62ace9;
+    color: #fff;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    background-color: #d6d6d6;
+}
+
+.footer-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #6cabdf;
+}
+
+.brand-highlight {
+    color: #2196f3;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 768px) {
+    .calculator-container {
+        width: 60%;
+        padding: 15px;
+    }
+
+    #calculator-display {
+        height: 50px;
+        font-size: 1.3rem;
+    }
+
+    .button {
+        padding: 12px;
+        font-size: 1rem;
+    }
+}
